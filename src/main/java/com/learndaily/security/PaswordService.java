@@ -6,11 +6,12 @@ import java.util.Base64.Encoder;
 
 public class PaswordService {
 
-	//	this is experiment branch
+
 	public static String encode(String txt) {
 		Encoder encoder = Base64.getEncoder();
 		return encoder.encodeToString(txt.getBytes());
 	}
+	
 	public static String decode(String entxt) {
 		Decoder decoder = Base64.getDecoder();
 		byte[] b = decoder.decode(entxt);
